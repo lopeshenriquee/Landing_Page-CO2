@@ -253,11 +253,19 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+  display: flex; /* Adiciona o flexbox */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
 }
 
-footer a img {
-  width: 24px;
-  margin: 0 10px;
+footer p {
+  margin: 0; /* Remove a margem do parágrafo */
+  flex-grow: 1; /* Faz o parágrafo ocupar todo o espaço disponível */
+}
+
+footer img {
+  width: 8%; /* Tamanho da imagem */
+  margin-left: 10px; /* Espaço à esquerda da imagem */
 }
 
 /* Media Queries para responsividade */
@@ -293,6 +301,7 @@ footer a img {
     width: 100%;
   }
 }
+
 
 @media (max-width: 480px) {
   header h1 {
