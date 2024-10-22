@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e7f4e4;
+  color: #333;
+}
+
+header {
+  background-color: #28a745;
+  color: white;
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-content {
+  max-width: 600px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1em;
+}
+
+/* Intro */
+.intro {
+  font-size: larger;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: left;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.intro .content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  max-width: 1300px;
+  width: 100%;
+  align-items: center;
+}
+
+.intro .image {
+  flex-shrink: 0;
+  max-width: 600px;
+}
+
+.intro .text {
+  flex: 1;
+}
+
+.intro img {
+  max-width: 100%;
+  height: auto;
+}
+
+.highlight-img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Features */
+.features {
+  padding: 40px 20px;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #28a745;
+}
+
+.features-flex {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 700px;
+  height: auto;
+  box-sizing: border-box;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 10px 0;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height: auto;
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  color: #28a745;
+}
+
+.feature p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* How-it-Work */
+.how-it-works {
+  padding: 40px 20px;
+}
+
+.how-it-works h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #28a745;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  width: 80%;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.step h4 {
+  font-size: 1.5em;
+  color: #28a745;
+}
+
+.step p {
+  font-size: 1em;
+  color: #555;
+}
+
+.github-code {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.github-code h2 {
+  font-size: 2em;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.github-content p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.github-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+}
+
+.github-link:hover {
+  background-color: #218838;
+}
+
+.github-link span.material-icons {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Devs */
+.developer-info {
+  margin-top: 40px;
+}
+
+.developer-info h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.developer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.developer {
+  text-align: center;
+}
+
+.developer img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.developer p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a img {
+  width: 24px;
+  margin: 0 10px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .highlight-img {
+    width: 100%;
+  }
+
+  .features-flex {
+    flex-direction: column;
+  }
+
+  .feature {
+    width: 100%;
+  }
+
+  .step {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 0.9em;
+  }
+
+  .intro .content {
+    padding: 20px;
+  }
+
+  .features h2, .how-it-works h2 {
+    font-size: 1.5em;
+  }
+
+  .step h4, .feature h3 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .developer-info {
+    flex-direction: column;
+  }
+
+  .developer img {
+    width: 100px;
+    height: 100px;
+  }
+}
