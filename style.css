@@ -264,8 +264,7 @@ footer p {
 }
 
 footer img {
-  width: 8%; /* Tamanho da imagem */
-  margin-left: 10px; /* Espaço à esquerda da imagem */
+  width: 6%; /* Tamanho da imagem */
 }
 
 /* Media Queries para responsividade */
