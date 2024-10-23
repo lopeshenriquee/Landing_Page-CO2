@@ -253,18 +253,18 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  display: flex; /* Adiciona o flexbox */
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
 }
 
 footer p {
-  margin: 0; /* Remove a margem do parágrafo */
-  flex-grow: 1; /* Faz o parágrafo ocupar todo o espaço disponível */
+  margin: 0;
+  flex-grow: 1; 
 }
 
 footer img {
-  width: 6%; /* Tamanho da imagem */
+  width: 6%; 
 }
 
 /* Media Queries para responsividade */
